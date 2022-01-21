@@ -1,0 +1,89 @@
+
+    #hero {
+        height: auto;
+        width: 100%;
+        margin: 0px;
+        float: left;
+        background-size: cover;
+		  box-shadow: 20px 0px 00px 0px rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+    }
+	
+
+	
+	.imageCycle1{
+		
+		 background: url(../graphics/backgrounds/bg-1.jpg) top center no-repeat;
+	
+	}
+	
+	.imageCycle2{
+
+		 background: url(../graphics/backgrounds/bg-2.jpg) top center no-repeat;
+	
+	}
+	
+	.imageCycle3{
+		
+		 background: url(../graphics/backgrounds/bg-3.jpg) top center no-repeat;
+		
+	}
+	
+	.imageCycle4{
+		
+		 background: url(../graphics/backgrounds/bg-4.jpg) top center no-repeat;
+		
+	}
+	
+	.imageCycle5{
+		
+		 background: url(../graphics/backgrounds/bg-5.jpg) top center no-repeat;
+		
+	}
+	
+	.imageCycle6{
+		
+		 background: url(../graphics/backgrounds/bg-6.jpg) top center no-repeat;
+		
+	}
+	
+	.imageCycle7{
+		
+		 background: url(../graphics/backgrounds/bg-7.jpg) top center no-repeat;
+		
+	}
+	
+	.imageCycle8{
+		
+		 background: url(../graphics/backgrounds/bg-8.jpg) top center no-repeat;
+		
+	}
+	
+	.imageCycle9{
+		
+		 background: url(../graphics/backgrounds/bg-9.jpg) top center no-repeat;
+		
+	}
+	
+	.imageCycle10{
+		
+		 background: url(../graphics/backgrounds/bg-10.jpg) top center no-repeat;
+		
+	}
+
+    #herooverlay {
+        width: 100%;
+        height: auto;
+        float: left;
+        z-index: 10;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.0) 20%,rgba(0,0,0,0.0) 50%,rgba(0,0,0,0.5) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3364cfef', endColorstr='#80a0e8e6',GradientType=0 ); /* IE6-9 */
+        position: relative;
+    }
+	
+    #view {
+        float: left;
+        width: 100%;
+        margin-bottom: 180px; /* Height of the footer. */
+    }
+    
+ 

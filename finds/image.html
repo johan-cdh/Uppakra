@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <title>Nyckeln till Uppåkra</title>
+    <meta name="viewport" content="width=768" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/arosenius.css" rel="stylesheet" />
+    <link href="css/image.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    </script>
+  </head>
+
+  <body class="image-view-open">
+    <div id="app">
+      <div>
+        <div class="site-content">
+          <div class="image-display-module">
+            <div>
+              <div class="image-container">
+                <div class="image-wrapper" style="transform: rotate(0deg)">
+                  <img
+                    src="{{url}}"
+                    alt="{{description}}"
+                    class="image-image"
+                  />
+                </div>
+                <div class="image-buttons">
+                  <a
+                    class="icon-download"
+                    href="{{url}}"
+                    target="_blank"
+                    download=""
+                  >
+                  </a>
+                  <!-- <a class="icon-rotate"></a> -->
+                  <button
+                    class="toggle-show-all"
+                    style="transition-delay: 60ms"
+                    onclick="toggleFull()"
+                  >
+                    <span class="icon-arrow arrow-1"></span>
+                    <span class="icon-arrow arrow-2"></span>
+                    Visa full bredd
+                  </button>
+                  <!-- <button class="icon-fulldisplay"></button> -->
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <h2>{{sakord}}</h2>
+              <div id="image-metadata"></div>
+              <!-- Script outputs something like this:
+              <div class="row">
+                <div class="four columns">
+                  <div class="attribute">
+                    <span class="label">Foo:</span>
+                    bar
+                  </div>
+                  ...
+                </div>
+                ...
+              </div>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="foot" class="bigger">
+        <a href="/"><div id="footlogo"></div></a>
+        <div id="divider"></div>
+        <div id="footInfo">
+            <div class="item" style="font-size:33px; margin-bottom:12px;" onclick="scrollToTop()">Nyckeln till Uppåkra</div>
+            <div class="item"><a href="/#finds">Föremål</a></div>
+            <div class="item"><a href="/map">Geografisk information</a></div>
+            <div class="item"><a href="/#finds">Arkeologiska undersökningar</a></div>
+        </div>
+        <div class="sponsor" style="background:url(/assets/lulogo.png); background-size:150px; background-repeat:no-repeat;"></div>
+    </div>
+
+    <script src="js/image.js" type="text/javascript"></script>
+  </body>
+</html>

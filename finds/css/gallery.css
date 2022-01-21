@@ -1,0 +1,429 @@
+#gallery {
+    width: 100%;
+    float: left;
+    background-color: rgb(130, 130, 130);
+}        
+        /* Grid styles */
+        .grid {
+        }
+
+            .grid:after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+        .grid-item {
+            transition: all .2s ease-in-out;
+            background-color: black;
+            margin-bottom: 1px;
+        }
+
+        .grid-sizer,
+        .grid-item {
+            width: 9.98%;
+            width: calc((100% - 9px) / 10);
+        }
+		
+        @media screen and (max-width: 4000px) {
+
+
+            .grid-sizer,
+            .grid-item {
+          width: 12.48%;
+					width: calc((100% - 7px) / 8);
+				}
+        }
+		
+        @media screen and (max-width: 3000px) {
+
+
+            .grid-sizer,
+            .grid-item {
+            width: 14.25%;
+						width: calc((100% - 6px) / 7);
+					}
+        }
+		
+        @media screen and (max-width: 2500px) {
+
+
+            .grid-sizer,
+            .grid-item {
+            width: 16.63%;
+						width: calc((100% - 5px) / 6);
+					}
+        }
+		
+		
+        @media screen and (max-width: 2000px) {
+
+
+            .grid-sizer,
+            .grid-item {
+            width: 19.95%;
+						width: calc((100% - 4px) / 5);
+					}
+        }
+
+
+
+
+        @media screen and (max-width: 1400px) {
+
+
+            .grid-sizer,
+            .grid-item {
+                width: 24.95%;
+								width: calc((100% - 3px) / 4);
+            }
+        }
+
+
+
+        @media screen and (max-width: 1100px) {
+            /* fluid 5 columns */
+            .grid-sizer,
+            .grid-item {
+								width: 33.2%;
+								width: calc((100% - 2px) / 3);
+            }
+        }
+
+
+        @media screen and (max-width: 900px) {
+
+
+            .grid-sizer,
+            .grid-item {
+                width: 49.95%;
+								width: calc((100% - 3px) / 4);
+							}
+
+            .documentationArticle {
+                column-count: 1;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+        }
+
+
+
+
+
+        /* ---- .grid-item ---- */
+
+
+        .grid-item {
+            float: left;
+            transition: all .2s ease-in-out;
+            overflow: hidden;
+        }
+
+            .grid-item img {
+                display: block;
+                width: 100%;
+                object-fit: cover;
+                transition: all .2s ease-in-out;
+            }
+
+        .grid-item:hover {
+                display: block;
+                transform: scale(1.05);
+                filter: brightness(110%);
+                z-index: 100;
+                box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+            }
+
+        .galleryObjectDescription {
+            color: white;
+            padding: 0 0 0 10px;
+            height: 0px;
+            overflow: hidden;
+        }
+
+        .grid-item:hover .galleryObjectDescription {
+            padding: 10px;
+            height: 25px;
+            transition: all .2s ease-in-out;
+				}
+
+#catalog {
+	padding: 0 2% 300px;
+	color: black;
+}
+
+#catalog h2 {
+	font-size: 40px;
+	margin-top: 1.5em;
+}
+
+#catalog-overview{
+	margin-top:20px;
+	margin-bottom:30px;
+	column-gap: 20px;
+	line-height: 2.2;
+	font-weight: 300;
+	columns: 7;
+	color:black;
+}
+
+@media screen and (max-width: 1500px) {			 
+	#catalog-overview{	  		
+			columns: 5;	  		
+	}			 
+}
+
+@media screen and (max-width: 1300px) {			 
+	#catalog-overview{	  		
+			columns: 4;	  		
+	}	 
+}
+
+@media screen and (max-width: 800px) {	 
+	#catalog-overview{
+			columns: 3;
+	}
+}
+
+#catalog-overview *[onclick] {
+	cursor: pointer;
+}
+
+.gridPub {
+}
+
+
+		    .gridPub:after {
+		        content: '';
+		        display: block;
+		        clear: both;
+		    }
+
+            .grid-item-pub {
+		        margin-top: 10px;
+		        float: left;
+            }
+            
+		    .grid-sizer-pub,
+		    .grid-item-pub {
+		        width: 9.8%;
+                width: calc((100% - 90px) / 10);
+            }
+             
+			
+			@media screen and (max-width: 4500px) {
+			    .grid-sizer-pub,
+			    .grid-item-pub {
+			        width: 10.8%;
+							width: calc((100% - 80px) / 9);
+						}
+			}
+			
+			@media screen and (max-width: 4000px) {
+			    .grid-sizer-pub,
+			    .grid-item-pub {
+			        width: 12.0%;
+							width: calc((100% - 70px) / 8);
+			    }
+			}
+			
+			@media screen and (max-width: 3500px) {
+			    .grid-sizer-pub,
+			    .grid-item-pub {
+			        width: 14.0%;
+							width: calc((100% - 60px) / 7);
+			    }
+			}
+			
+			@media screen and (max-width: 3000px) {
+			    .grid-sizer-pub,
+			    .grid-item-pub {
+			        width: 16.3%;
+							width: calc((100% - 50px) / 6);
+			    }
+			}
+			
+			@media screen and (max-width: 2500px) {
+			    .grid-sizer-pub,
+			    .grid-item-pub {
+			        width: 19.4%;
+							width: calc((100% - 40px) / 5);
+			    }
+			}
+			
+			@media screen and (max-width: 2400px) {
+			    .grid-sizer-pub,
+			    .grid-item-pub {
+			        width: 24.4%;
+							width: calc((100% - 30px) / 4);
+			    }
+			}
+
+			@media screen and (max-width: 1600px) {
+			    .grid-sizer-pub,
+			    .grid-item-pub {
+			        width: 32.5%;
+							width: calc((100% - 20px) / 3);
+			    }
+			}
+
+
+		@media screen and (max-width: 1100px) {
+		    .grid-sizer-pub,
+		    .grid-item-pub {
+		        width: 48.5%;
+						width: calc((100% - 10px) / 2);
+				}
+		}
+		
+		@media screen and (max-width: 800px) {
+		    .grid-sizer-pub,
+		    .grid-item-pub {
+		        width: 100%;
+		    }
+		}
+
+	
+
+		
+		
+
+
+	    .grid-item-pub {
+	        float: left;
+	        height: 180px;
+	        overflow: hidden;
+	        transition: all .1s ease-in-out;
+			border-radius:4px;
+			background-color:rgba(255,255,255,0.5);
+	       
+	    }
+
+
+	        .grid-item-pub:hover {
+	            display: block;
+                transform: scale(1.02);
+                 background-color:rgba(255,255,255,0.6);
+				 box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1), 0 6px 40px 0 rgba(0, 0, 0, 0.09);
+				
+				;
+	        }
+
+			.PubBigImageContainer {
+			
+		        height: 180px;
+		        width: 200px;
+		        float: left;
+				background-color:white;
+			
+				overflow:hidden;
+		    }
+			
+			@media screen and (max-width: 800px) {
+				.PubBigImageContainer {
+					
+			        height: 280px;
+			        width: 300px;
+			    
+			    }
+				
+			    .grid-item-pub {
+			       
+			        height: 280px;
+
+	       
+			    }
+			}
+	    
+		.PubBigImage {
+	    background-size:contain;
+			background-repeat: no-repeat;
+			background-position: center bottom;
+	        height: 100%;
+	        width: 100%;
+	        float: left;
+		
+	    }
+
+	    .PublicationInfoContainer {
+	        width: 30%;
+	        float: left;
+	        margin-top: 10px;
+			color:black;
+	    }
+		
+	
+
+	    .PublicationTitle {
+	        margin-left: 20px;
+	        float: left;
+	        font-weight: 200;
+	        font-style: normal;
+	        font-size: 24px;
+	        
+	    }
+
+
+	    .PublicationSubTitle {
+	        height: 30px;
+	        margin-top: 2px;
+	        margin-left: 20px;
+	        float: left;
+	        font-weight: 200;
+	        font-style: normal;
+	        font-size: 16px;
+	      
+	    }
+
+	    .PubBigMetaContainer {
+	        cursor: pointer;
+	        width: 100%;
+	        margin-left: 20px;
+	        margin-top: 10px;
+	        margin-bottom: 10px;
+	        float: left;
+	        font-weight: 200;
+	        font-style: normal;
+	        font-size: 18px;
+	    }
+
+	    .PubBigMeta {
+	        width: 80%;
+	        margin-left: 0px;
+	        margin-bottom: 4px;
+	        float: left;
+	        font-weight: 200;
+	        font-style: normal;
+	        font-size: 16px;
+			height:25px;
+			overflow:hidden;
+	    }
+		
+	    .PubBigMetaInv {
+	        margin-left: 20px;
+	        float: left;
+	        font-weight: 200;
+			margin-bottom:10px;
+			width:100%;
+	        font-style: normal;
+	        font-size: 16px;
+			overflow:hidden;
+	    }
+		
+		
+		@media screen and (max-width: 800px) {
+		   .PubBigMetaInv {
+		       font-size: 20px;
+		    }
+			.PubBigMeta {
+				 font-size: 20px;
+			}
+			
+			 .PublicationTitle {
+				 	 font-size: 40px;
+		}
+	}
+     
+		

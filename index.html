@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Nyckeln till Uppåkra</title>
+    <meta name="viewport" content="width=768">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/main.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://unpkg.com/infinite-scroll@3.0.6/dist/infinite-scroll.pkgd.js'></script>
+    <script src='https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.3.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
+    <script src="/assets/main.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="intro">
+    <img id="intro-logo" src="/assets/logo_small.png" height="160" alt="Logotyp" />
+
+    <div id="Title">Nyckeln till Upp&aring;kra</div>
+    <div class="Description">
+        Med Nyckeln till Upp&aring;kra &ouml;ppnas stora m&ouml;jligheter till nationella och internationella studier av j&auml;rn&aring;lderns och medeltidens samh&auml;llsbygge utifr&aring;n en plats med extrem bebyggelsekontinuitet. I arkivet synkroniseras flera &aring;rs arkeologiska unders&ouml;kningar till ett sammanh&auml;ngande digitalt system i Intrasis och GIS, vilket f&ouml;rb&auml;ttrar m&ouml;jligheterna till kronologiska och rumsliga studier.
+    </div>
+
+    <div class="Description" style="max-width:600px; padding:15px 0px 35px 0px;">
+        Projektet har möjliggjorts genom forskningsbidrag från Riksbankens Jubileumsfond. Arkiven &auml;r under uppbyggnad och ut&ouml;kas med fler funktioner och objekt.
+    </div>
+
+    <div class="IntroHeader">Utforska arkiven</div>
+    <div id="IntroMenuContainer" style="width:640px; padding:0px 30px 0px 0px" >
+        <span class="MenuItem" onclick="navigate('info');">Arkeologiska undersökningar</a></span>
+        <span class="viewOptionSeparator">|</span>
+        <span class="MenuItem" onclick="navigate('finds');">F&ouml;rem&aring;l</span>
+        <span class="viewOptionSeparator">|</span>
+        <a class="MenuItem" href="/map">Geografisk information</a>
+    </div>
+
+    <div class="introdivider"></div>
+
+    <div id="usage">
+        <div class="IntroHeader">Anv&auml;ndning</div>
+    </div>
+
+    <div id="IntroMenuContainer" >
+        <span class="MenuItem"><a href="http://">Introduktion till arkiven</a></span>
+        <span class="viewOptionSeparator">|</span>
+        <span class="MenuItem"><a href="https://www.uppakra.lu.se">Om forskningsprojektet</a></span>
+    </div>
+    <!-- <div class="fine">Om inget annat anges s&aring; &auml;r arkivets material Public Domain.</div> -->
+    <div class="arrow" style="margin-bottom:20px;" onclick="scrollToSection()"></div>
+
+</div>
+
+<div id="main">
+    <div id="finds" data-open="/finds/archive.html"></div>
+    <div id="info" data-open="/info/info.html"></div>
+</div>
+	
+<div id="foot">
+    <div id="footlogo" onclick="scrollToTop()"></div>
+    <div id="divider"></div>
+    <div id="footInfo">
+        <div class="item" style="font-size:33px; margin-bottom:12px;"onclick="scrollToTop()">Nyckeln till Uppåkra</div>
+        <div class="item" onclick="navigate('finds');">Föremål</div>
+        <div class="item"><a href="/map">Geografisk information</a></div>
+        <div class="item" onclick="navigate('info');">Arkeologiska undersökningar</div>
+    </div>
+    <div class="sponsor" style="background:url(/assets/lulogo.png); background-size:150px; background-repeat:no-repeat;"></div>
+</div>
+
+</body>
+</html>
+
+
+
+

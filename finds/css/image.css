@@ -1,0 +1,136 @@
+/* Overriding arosenius.css */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-header .site-logo,
+.site-header .site-title,
+.site-header nav.site-nav ul a {
+    font-family: "Open Sans Condensed", sans-serif;
+}
+html,
+body {
+    background: #727272;
+}
+a, a:hover {
+    color: #93c9de;
+}
+.image-container .image-wrapper {
+    min-height: 400px;
+}
+.image-image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 70vh;
+    max-height: calc(100vh - 180px);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2),
+        0 6px 40px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+.image-container.enlarged-display .image-image {
+    max-height: 2000px;
+}
+#image-metadata-primary {
+    font-size: 140%;
+    margin-bottom: 2em;
+}
+.attribute,
+.label {
+    font-size: inherit;
+}
+.label {
+    color: #ccc;
+}
+
+/* Elements from index.html */
+/* Footer Styles */
+#foot {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    z-index: 999;
+    transition: height 0.3s;
+}
+
+#foot.bigger {
+    height: 180px;
+}
+
+#foot #footlogo {
+    background: url(/assets/logo_small.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    margin-top: 15px;
+    width: 180px;
+    height: 180px;
+    margin-left: 25px;
+    padding: 0px 0px 16px 0px;
+    text-align: left;
+
+    color: white;
+    float: left;
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+#foot #divider {
+    width: 20px;
+    margin-left: 10px;
+    height: 250px;
+    text-align: left;
+    border-style: solid;
+    border-color: #999999;
+    border-width: thin;
+    border-width: 0px 1px 0px 0px;
+    float: left;
+    position: relative;
+}
+
+#foot #footInfo {
+    width: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: auto;
+    float: left;
+    position: relative;
+    transition: all 0.3s;
+}
+
+#foot .item {
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-size: 20px;
+    line-height: 33px;
+    color: white;
+}
+
+#foot a {
+    color: white;
+}
+
+#foot.bigger .item {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.sponsor {
+    height:150px;
+    width:150px;
+    float:right;
+    margin-top:15px;
+    margin-right:25px;
+}
